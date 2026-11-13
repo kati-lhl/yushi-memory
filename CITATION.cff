@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+title: YuShi Memory
+message: AI 角色长期记忆的数据结构
+type: software
+authors:
+  - family-names: 御世
+    name: 御世
+version: 0.1.0
+date-released: 2026-11-13
+license: MIT
+repository-code: https://github.com/kati-lhl/yushi-memory
+url: https://github.com/kati-lhl/yushi-memory
+keywords:
+  - AI character memory
+  - SoulBrain
+  - memory.jsonl
+  - SQLite FTS5
+  - local-first
