@@ -1,0 +1,68 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://github.com/kati-lhl/yushi-memory/schema/memory.schema.json",
+  "title": "YuShi Memory Record",
+  "description": "AI 角色长期记忆的单条记录结构。只定义数据，不定义召回/巩固策略。",
+  "type": "object",
+  "required": ["id", "content", "status"],
+  "additionalProperties": true,
+  "properties": {
+    "id": {
+      "type": "string",
+      "description": "记忆唯一 ID"
+    },
+    "content": {
+      "type": "string",
+      "description": "事实/偏好/边界内容"
+    },
+    "type": {
+      "type": "string",
+      "description": "身份/偏好/约定/边界/事实等"
+    },
+    "status": {
+      "type": "string",
+      "enum": ["active", "superseded", "cold", "deleted", "muted", "pending"],
+      "description": "只有 active 进入召回索引"
+    },
+    "importance_p": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "重要度"
+    },
+    "retention_R": {
+      "type": "number",
+      "minimum": 0,
+      "maximum": 1,
+      "description": "留存强度"
+    },
+    "created_at": {
+      "type": "string",
+      "description": "ISO 时间"
+    },
+    "valid_from": {
+      "type": "string",
+      "description": "生效时间"
+    },
+    "last_seen": {
+      "type": "string",
+      "description": "最后一次出现"
+    },
+    "source": {
+      "type": "string",
+      "description": "chat / user / diary 等"
+    },
+    "source_quote": {
+      "type": "string",
+      "description": "原话证据"
+    },
+    "topic": {
+      "type": "string",
+      "description": "主题，如 address / preference / location"
+    },
+    "superseded_by": {
+      "type": "string",
+      "description": "被哪条新记忆取代"
+    }
+  }
+}
