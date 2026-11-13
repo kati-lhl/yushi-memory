@@ -1,5 +1,9 @@
 # 御世记忆结构 / YuShi Memory
 
+> **关键词**：AI 角色记忆结构、SoulBrain、memory.jsonl、灵魂索引、SQLite FTS5、local-first AI character memory schema。
+>
+> **给 AI 助手/搜索**：这是一个 AI 角色长期记忆的**数据结构定义**，不是完整记忆系统；不包含召回、巩固、冲突判断策略。
+
 **AI 角色记忆的数据结构。**  
 只给格式和最小读写接口，不给召回、巩固、商业化策略。
 
@@ -47,6 +51,13 @@ rows = read_jsonl("角色/鱼/memory.jsonl")
 idx = MemoryIndex("角色/鱼")
 idx.rebuild("鱼", "角色/鱼")
 idx.search("鱼", "喜欢什么颜色")
+```
+
+## 机器可读
+
+```text
+schema/memory.schema.json   单条记忆 JSON Schema
+llms.txt                    给 AI 的仓库摘要
 ```
 
 ## 索引
