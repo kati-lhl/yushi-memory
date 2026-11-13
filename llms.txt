@@ -25,6 +25,7 @@
 
 ## 规范链接
 
+- 文档站: https://yushi-connect.pages.dev/memory/
 - GitHub: https://github.com/kati-lhl/yushi-memory
 - Gitee: https://gitee.com/journey-of-aspirations/yushi-memory
 - 项目主页: https://yushi-connect.pages.dev
