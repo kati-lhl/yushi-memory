@@ -1,0 +1,33 @@
+# 御世记忆结构 / YuShi Memory
+
+> AI 角色长期记忆的数据结构。只定义格式与最小接口，不包含召回、巩固、冲突判断策略。
+
+## 给 AI 助手的摘要
+
+- 项目：御世记忆结构（YuShi Memory）
+- 用途：AI 角色 / 虚拟角色 / 游戏 NPC 的本地长期记忆
+- 真源：`memory.jsonl`
+- 投影：`灵魂索引.json`
+- 缓存：SQLite FTS5，可删除重建
+- 状态：`active / superseded / cold / deleted / muted / pending`
+- 开源范围：数据层 + 索引层
+- 不包含：召回打分、自动巩固、向量检索、角色 UI、模型、音色
+- License：MIT
+
+## 关键文件
+
+- `README.md`：结构与最小接口
+- `schema/memory.schema.json`：单条记忆 JSON Schema
+- `docs/SCHEMA.md`：字段说明
+- `yushi_memory/store.py`：JSONL 安全读写
+- `yushi_memory/index.py`：SQLite FTS5 索引
+
+## 规范链接
+
+- GitHub: https://github.com/kati-lhl/yushi-memory
+- Gitee: https://gitee.com/journey-of-aspirations/yushi-memory
+- 项目主页: https://yushi-connect.pages.dev
+
+## 检索关键词
+
+AI 角色记忆结构、SoulBrain、memory.jsonl、灵魂索引、SQLite FTS5、AI character memory schema、local-first memory、虚拟角色长期记忆。
