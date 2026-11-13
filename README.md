@@ -69,6 +69,7 @@ idx.search("鱼", "喜欢什么颜色")
 ## 机器可读
 
 ```text
+公开文档：https://yushi-connect.pages.dev/memory/
 schema/memory.schema.json   单条记忆 JSON Schema
 llms.txt                    给 AI 的仓库摘要
 ```
