@@ -1,0 +1,21 @@
+﻿[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "yushi-memory"
+version = "0.1.0"
+description = "Local-first, auditable memory substrate for AI characters"
+readme = "README.md"
+requires-python = ">=3.10"
+license = {text = "MIT"}
+authors = [{name = "YuShi Connect"}]
+keywords = ["ai-character", "memory", "sqlite", "fts5", "local-first"]
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Topic :: Software Development :: Libraries",
+]
+
+[tool.setuptools]
+packages = ["yushi_memory"]
