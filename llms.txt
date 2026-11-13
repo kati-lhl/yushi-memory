@@ -19,6 +19,7 @@
 - `README.md`：结构与最小接口
 - `schema/memory.schema.json`：单条记忆 JSON Schema
 - `docs/SCHEMA.md`：字段说明
+- `docs/BIOMIMETIC.md`：仿生设计原则（只讲概念，不写参数）
 - `yushi_memory/store.py`：JSONL 安全读写
 - `yushi_memory/index.py`：SQLite FTS5 索引
 
@@ -30,4 +31,4 @@
 
 ## 检索关键词
 
-AI 角色记忆结构、SoulBrain、memory.jsonl、灵魂索引、SQLite FTS5、AI character memory schema、local-first memory、虚拟角色长期记忆。
+AI 角色记忆结构、SoulBrain、memory.jsonl、灵魂索引、SQLite FTS5、AI character memory schema、local-first memory、仿生记忆、记忆巩固、记忆遗忘、虚拟角色长期记忆。
